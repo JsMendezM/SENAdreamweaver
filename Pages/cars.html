@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autos</title>
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+  <script>
+    function hoverEffect(element) {
+        element.style.transform = "scale(1.1)";
+        element.style.transition = "transform 0.3s ease";
+    }
+
+    function normalEffect(element) {
+        element.style.transform = "scale(1)";
+    }
+</script>
+<script>
+  function changeImageAndColor(element, imageUrl) {
+      const img = element.querySelector('img');
+      img.src = imageUrl;
+      element.style.backgroundColor = 'lightgreen';
+  }
+
+  function resetImageAndColor(element, imageUrl) {
+      const img = element.querySelector('img');
+      img.src = imageUrl;
+      element.style.backgroundColor = 'lightblue';
+  }
+</script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">Pagina Principal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Autos <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./maintenance.html">Mantenimiento</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./tireMounters.html">Montallantas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./alignmentBalance.html">Alineación y Balanceo</a>
+          </div>
+        </li>
+        <li>
+          <a class="nav-link" href="./contact.html">Contacto</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <section>
+    <div class="jumbotron text-center mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Catalogo de Autos</h1>
+            <p>Explora nuestra amplia selección de vehículos disponibles para alquiler. Encuentra el auto perfecto para
+              tus necesidades, ya sea un viaje de negocios, una escapada de fin de semana o unas vacaciones en familia.
+              Nuestro catálogo incluye una variedad de marcas y modelos, cada uno con detalles completos y fotografías
+              para que puedas tomar la mejor decisión. ¡Elige el tuyo y disfruta de la carretera!.</p>
+            <p><a class="btn btn-primary btn-lg" href="../index.html" role="button">Leer Mas »</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Categoria: Edicion Limitada</h2>
+          <p>El mejor lugar para alquilar autos de colombia para el mundo</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-12 text-center">
+          <div onmouseover="changeImageAndColor(this, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfHJ1P1zjjk1_n60rer4gIxFd5EG1ZhaqTQ&s')"
+          onmouseout="resetImageAndColor(this, '../images/edicionltda.png')">
+            <img class="img-fluid" src="../images/edicionltda.png" alt="">
+          </div>
+          <h4>Categoria: Autos de Lujo (Ferrari)</h4>
+        </div>
+        <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+          <div onmouseover="changeImageAndColor(this, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpSelqig2f7PiM4oxIzBrLNzo0eI9P-YLCg&s')"
+          onmouseout="resetImageAndColor(this, '../images/ediciltdaa.png')">
+              <img class="img-fluid" src="../images/ediciltdaa.png" alt="">
+          </div>
+          <h4>Categoria: Autos Clasicos</h4>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="../images/ferrari (2).png" alt="" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="../images/ferrari (3).png" alt="" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="../images/BMW.png" alt="" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="../images/BMW (2).png" alt="" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">
+        </div>
+    </div>    
+      <hr>
+      <div class="row">
+        <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="../images/ferrari (4).png" alt="" onmouseover="hoverEffect(this, 'Ferrari Model 4')" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="../images/ferrari.png" alt="" onmouseover="hoverEffect(this, 'Ferrari')" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="../images/BMW (3).png" alt="" onmouseover="hoverEffect(this, 'BMW Model 3')" onmouseout="normalEffect(this)">
+        </div>
+        <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="../images/BMW (4).png" alt="" onmouseover="hoverEffect(this, 'BMW Model 4')" onmouseout="normalEffect(this)">
+        </div>
+    </div>
+    <div id="description" style="text-align:center; margin-top:20px; font-size:18px; color:#555;"></div>    
+    </div>
+  </section>
+  <hr>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <h3 class="text-center">QUIENES SOMOS</h3>
+          <p>En Car Rent Colombia, nos dedicamos a ofrecerte la mejor experiencia de alquiler de autos. Con años de
+            experiencia en la industria y un compromiso inquebrantable con la satisfacción del cliente, trabajamos para
+            proporcionarte vehículos de alta calidad y un servicio excepcional. Nuestro equipo está aquí para ayudarte a
+            encontrar el auto ideal para cada ocasión. ¡Conócenos y descubre por qué somos tu mejor opción en alquiler
+            de autos!</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <h3 class="text-center">PONERSE EN CONTACTO</h3>
+          <address class="text-center">
+            <strong>Servicio Nacional de Aprendizaje, SENA.</strong><br>
+            Diseño web Dreamweaver<br>
+            Jonathan Mendez CC 1026293515<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+        </div>
+        <div class="col-md-4 col-12">
+          <form>
+            <div class="form-group col-12">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <button type="submit" class="btn btn-dark mt-2">CONTACTO</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © MyCompany. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap-4.3.1.js"></script>
+</body>
+
+</html>
